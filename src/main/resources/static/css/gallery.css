@@ -1,0 +1,61 @@
+/* Full Page Section */
+#gallery {
+    min-height: 100vh; /* Make sure the section takes up the entire height of the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f8f9fa; /* Light background color */
+    padding-top: 50px; /* Add some top padding */
+}
+
+#gallery h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Carousel Styles */
+.carousel {
+    width: 100%;
+    max-width: 1200px; /* Max width for the carousel */
+    margin: 0 auto; /* Center the carousel */
+    background-color: #000; /* Set a solid background to avoid flickering */
+}
+
+/* Carousel Inner (images and captions) */
+.carousel-inner {
+    position: relative; /* Ensures no background flicker */
+}
+
+/* Carousel Item - Faster transition */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.01s ease-in-out; /* Fast transition between images */
+}
+
+/* Carousel Indicators */
+.carousel-indicators li {
+    background-color: #6c757d;
+}
+
+/* Active Indicator */
+.carousel-indicators .active {
+    background-color: #007bff;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff; /* Blue color for the controls */
+    border-radius: 50%;
+}
+
+/* Add Caption styles */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}

@@ -3,25 +3,25 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    color: #5A3E36; /* Rich brown color for text visibility on beige */
+    color: #FFFFFF; /* White color for paragraph text */
 }
 
 #landing .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start; /* Align text to the left */
     height: 100%;
-    text-align: right;
+    text-align: left; /* Align text to the left */
 }
 
 #landing h1 {
     font-family: 'Pacifico', cursive;
-    color: #5A3E36; /* Color suitable for a beige background */
+    color: #D2B48C; /* Light coffee-related color for the heading */
 }
 
 #landing p {
-    color: #5A3E36;
+    color: #FFFFFF; /* White color for paragraphs */
 }
 
 #landing a {

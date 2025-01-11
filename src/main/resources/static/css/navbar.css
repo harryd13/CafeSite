@@ -1,10 +1,51 @@
+/* Increase the height of the navbar */
 .navbar {
     transition: background-color 0.5s ease;
+    height: 80px; /* Set the navbar height to make it taller vertically */
 }
-.navbar.bg-transparent {
-    background-color: transparent;
+
+/* Ensure the logo takes up all the vertical space */
+.navbar-brand img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: auto; /* Allow the width to auto-adjust based on height */
+    height: 80px; /* Set the logo height to match the navbar height */
 }
-.navbar.bg-white {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+/* For the navbar links */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center; /* Vertically center the nav items */
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: lightgrey;
+    transition: color 0.3s ease;
+    font-size: 18px; /* Optional: adjust font size */
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+    color: darkgrey;
+}
+
+/* Adjust navbar height and logo responsiveness for small screens */
+@media (max-width: 768px) {
+    .navbar {
+        height: 60px; /* Reduce navbar height on smaller screens */
+    }
+
+    .navbar-brand img {
+        height: 60px; /* Resize the logo accordingly */
+    }
+
+    .nav-link {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
 }

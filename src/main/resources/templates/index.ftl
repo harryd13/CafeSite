@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foffee Cafe</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/navbar.css" rel="stylesheet">
     <link href="/css/landing.css" rel="stylesheet">
+    <link href="/css/gallery.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
 
@@ -16,14 +18,14 @@
 <#include "navbar.ftl">
 
     <!-- Landing Section -->
-    <section id="landing" class="section text-right py-5" style="background-image: url('/images/landingBr1.JPG'); background-size: cover; background-position: center; height: 100vh;">
-        <div class="container text-white d-flex flex-column justify-content-center align-items-end h-100">
-            <h1 class="display-4 mb-3" style="font-family: 'Pacifico', cursive; color: #5A3E36;">Fun Friends & Foffee</h1>
-            <p class="lead mb-4" style="color: #5A3E36;">Established in 2021, Foffee Cafe is dedicated to delivering the utmost quality and a remarkable coffee experience. We blend passion with precision to craft the perfect cup of coffee for every customer. Our journey began with a simple mission: to create a space where coffee lovers can relax, connect, and savor the finest brews.</p>
-            <p class="lead mb-4" style="color: #5A3E36;">At Foffee Cafe, we prioritize using the highest quality beans, expertly roasted to perfection. Our commitment to sustainability and community drives us to source ethically and give back to our local environment. Every cup served is a testament to our dedication to excellence and customer satisfaction.</p>
-            <a href="#products" class="btn btn-primary btn-lg">Order Now</a>
-        </div>
-    </section>
+        <section id="landing">
+            <div class="container">
+                <h1 class="display-4 mb-3">Fun Friends & Foffee</h1>
+                <p class="lead mb-4">Established in 2021, Foffee Cafe is dedicated to delivering the utmost quality and a remarkable coffee experience. We blend passion with precision to craft the perfect cup of coffee for every customer. Our journey began with a simple mission: to create a space where coffee lovers can relax, connect, and savor the finest brews.</p>
+                <p class="lead mb-4">At Foffee Cafe, we prioritize using the highest quality beans, expertly roasted to perfection. Our commitment to sustainability and community drives us to source ethically and give back to our local environment. Every cup served is a testament to our dedication to excellence and customer satisfaction.</p>
+                <a href="#products" class="btn btn-primary btn-lg">Order Now</a>
+            </div>
+        </section>
 
 
 
@@ -86,21 +88,61 @@
     <section id="gallery" class="section bg-light py-5">
         <div class="container">
             <h2 class="text-center">Gallery</h2>
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <div class="gallery-item">
-                        <img src="/images/gallery1.jpg" class="img-fluid rounded mb-3" alt="Gallery Image 1">
+            <div id="carouselGallery" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselGallery" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselGallery" data-slide-to="1"></li>
+                    <li data-target="#carouselGallery" data-slide-to="2"></li>
+                    <li data-target="#carouselGallery" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Carousel Inner (images) -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/ws1.jpg" class="d-block w-100" alt="Image 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Image 1</h5>
+                            <p>Description of Image 1</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/ws2.jpg" class="d-block w-100" alt="Image 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Image 2</h5>
+                            <p>Description of Image 2</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/ws3.jpg" class="d-block w-100" alt="Image 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Image 3</h5>
+                            <p>Description of Image 3</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/ws4.jpg" class="d-block w-100" alt="Image 4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Image 4</h5>
+                            <p>Description of Image 4</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 text-center">
-                    <div class="gallery-item">
-                        <img src="/images/gallery2.jpg" class="img-fluid rounded mb-3" alt="Gallery Image 2">
-                    </div>
-                </div>
-                <!-- Add more gallery items as needed -->
+
+                <!-- Controls -->
+                <a class="carousel-control-prev" href="#carouselGallery" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselGallery" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </section>
+
+
 
     <!-- Contact Section -->
     <section id="contact" class="section bg-white py-5">
@@ -140,6 +182,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/navbar.js"></script>
 </body>
 
