@@ -16,16 +16,24 @@
 }
 
 #landing h1 {
-    font-family: 'Pacifico', cursive;
     color: #D2B48C; /* Light coffee-related color for the heading */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Shadow effect */
 }
 
 #landing p {
-    color: #FFFFFF; /* White color for paragraphs */
+    color: lightgrey;
+    font-family: "Dokdo", serif;
+    font-weight: 100;
+
 }
 
 #landing a {
     color: white;
     background-color: #5A3E36;
     border-color: #5A3E36;
+}
+.slackey-regular {
+  font-family: "Slackey", serif;
+  font-weight: 400;
+  font-style: normal;
 }

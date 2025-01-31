@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <div class="container d-flex justify-content-between align-items-center">
+    <div class="container d-flex justify-content-between align-items-center" id="navdiv">
         <a class="navbar-brand" href="#">
             <img src="/images/foffee.png" alt="Logo" class="rounded-circle" width="50" height="50">
         </a>

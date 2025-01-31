@@ -10,6 +10,7 @@
 }
 
 #gallery h2 {
+   font-family: "Slackey", serif;
     font-size: 36px;
     color: #333;
     margin-bottom: 40px;
@@ -20,7 +21,7 @@
     width: 100%;
     max-width: 1200px; /* Max width for the carousel */
     margin: 0 auto; /* Center the carousel */
-    background-color: #000; /* Set a solid background to avoid flickering */
+    /*background-color: #000; /* Set a solid background to avoid flickering */
 }
 
 /* Carousel Inner (images and captions) */
@@ -48,8 +49,9 @@
 /* Carousel Controls */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #007bff; /* Blue color for the controls */
-    border-radius: 50%;
+    background-color: transparent !important; /* Makes the background transparent */
+        border-radius: 50%;
+        filter: invert(1);
 }
 
 /* Add Caption styles */

@@ -1,0 +1,66 @@
+/* Section Height */
+#about {
+    min-height: 33vh; /* 1/3 of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 20px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#about h2 {
+    font-family: "Slackey", serif;
+    font-size: 30px;
+    color: #27272f;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.about-text {
+    font-size: 20px;
+    color: #767676;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    z-index: 2;
+    position: relative;
+    text-align: justify;
+}
+
+/* Image Styles */
+.about-image {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    opacity: 0;
+    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+    z-index: 1;
+    filter: brightness(30%);
+}
+
+/* Specific Positioning for Images */
+.about-image.top-left {
+    top: 0;
+    left: 10%;
+    transform: translate(-100%, -50%); /* Slide diagonally towards top-left */
+}
+
+.about-image.bottom-right {
+    bottom: 0;
+    right: 10%;
+    transform: translate(100%, 50%); /* Slide diagonally towards bottom-right */
+}
+
+/* Animation Triggered on Scroll */
+.about-image.visible {
+    opacity: 0.5;
+    transform: translate(0, -70%); /* Stop near the top */
+}
+
+.about-image.bottom-right.visible {
+    transform: translate(0, 70%); /* Stop near the bottom */
+}

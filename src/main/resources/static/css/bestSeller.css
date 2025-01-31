@@ -1,0 +1,48 @@
+#bestsellers {
+    background-color: #f8f9fa; /* Matches the page background */
+    padding: 40px 0;
+}
+
+.bestseller-container {
+
+    background-color: #f8f9fa; /* Ensure the container inside the section also matches */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Adds slight rounding to the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow for a polished look */
+}
+.bestseller-container h2{
+     font-family: "Slackey", serif;
+     margin-bottom: 2.5rem;
+}
+
+.bestseller-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.bestseller-content h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #767676; /* Ensure heading text color matches the specified color */
+}
+.bestseller-content h2 {
+    margin-bottom: 10px;
+}
+
+.bestseller-content p {
+    color: #767676; /* Updated paragraph text color */
+}
+
+.rounded-image {
+    border-radius: 15px;
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-item {
+    min-height: 400px;
+}

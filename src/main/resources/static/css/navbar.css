@@ -1,15 +1,13 @@
-/* Increase the height of the navbar */
 .navbar {
     transition: background-color 0.5s ease;
     height: 80px; /* Set the navbar height to make it taller vertically */
 }
 
-/* Ensure the logo takes up all the vertical space */
 .navbar-brand img {
     border-radius: 50%;
     object-fit: cover;
     width: auto; /* Allow the width to auto-adjust based on height */
-    height: 80px; /* Set the logo height to match the navbar height */
+    height: 70px; /* Set the logo height to match the navbar height */
 }
 
 /* For the navbar links */
@@ -35,6 +33,9 @@
     color: darkgrey;
 }
 
+#navdiv {
+    max-width: 1920px;
+}
 /* Adjust navbar height and logo responsiveness for small screens */
 @media (max-width: 768px) {
     .navbar {

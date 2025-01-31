@@ -1,0 +1,56 @@
+#reviews h2{
+    font-family: "Slackey", serif;
+}
+
+#reviews{
+    background-color: #f8f9fa;
+}
+
+.review-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.review-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-header h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.review-date {
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.star-rating {
+    color: #FFD700;
+    font-size: 18px;
+}
